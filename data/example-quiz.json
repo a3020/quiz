@@ -1,0 +1,43 @@
+{
+  "name": "Example quiz",
+  "questions": [
+    {
+      "name": "What does 2rem mean in CSS?",
+      "answers": [
+        {
+          "name": "The text is twice as bold",
+          "score": 0
+        },
+        {
+          "name": "The text is twice the size of the root element's font-size",
+          "score": 1
+        },
+        {
+          "name": "The text is twice as big as one em",
+          "score": 0
+        }
+      ]
+    },
+    {
+      "name": "The PHP syntax is most similar to:",
+      "answers": [
+        {
+          "name": "JavaScript",
+          "score": 0
+        },
+        {
+          "name": "Perl",
+          "score": 1
+        },
+        {
+          "name": "Swift",
+          "score": 0
+        },
+        {
+          "name": "None of te above",
+          "score": 0
+        }
+      ]
+    }
+  ]
+}

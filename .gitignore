@@ -1,0 +1,6 @@
+.idea
+.vagrant
+vendor/
+logs/*
+.env
+composer.lock

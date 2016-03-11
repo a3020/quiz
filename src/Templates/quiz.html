@@ -1,0 +1,38 @@
+{% extends "layout.html" %}
+
+{% block body %}
+<div class="row">
+    <div class="col-md-12">
+        <h1>{{quiz.name}}</h1>
+
+        <form method="post">
+
+            {% for question in quiz.questions %}
+                <div class="question">
+                    <h3>{{question.name}}</h3>
+
+                    {%
+                    set qindex = loop.index
+                    %}
+
+                    {% for answer in question.answers %}
+                    <div class="answer">
+                        <label>
+                            <input required type="radio" name="q{{qindex}}[]" value="{{answer.name}}">
+                            {{answer.name}}
+                        </label>
+                    </div>
+                    {% endfor %}
+                </div>
+
+            {% endfor %}
+
+            <div style="margin-top: 20px;">
+                <input type="submit" value="Submit" class="btn btn-success" />
+                <a href="{{ base_url() }}" class="btn btn-danger">Go back</a>
+            </div>
+        </form>
+    </div>
+</div>
+
+{% endblock %}

@@ -1,0 +1,16 @@
+{% extends "layout.html" %}
+
+{% block body %}
+<div class="row">
+    <div class="col-md-12">
+        <h1>Quizzes</h1>
+
+        <ul>
+            {% for uri, quiz in quizzes %}
+                <li><a href="{{ base_url() }}/quiz/{{uri}}">{{quiz}}</a></li>
+            {% endfor %}
+        </ul>
+
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,12 @@
+{% extends "layout.html" %}
+
+{% block body %}
+<div class="row">
+    <div class="col-md-12">
+        <h1>{{quiz.name}}</h1>
+
+        <p>Thanks for doing the quiz.</p>
+        <p>Your score: {{score}} out of {{max_score}} ({{percentage}}%)</p>
+    </div>
+</div>
+{% endblock %}
