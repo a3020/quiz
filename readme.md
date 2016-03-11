@@ -12,3 +12,11 @@ It's possible to add new quizzes by adding a new json file to the /data director
 An example quiz (example-quiz.json) is included. It's only possible to add multiple choice questions.
 
 This package is meant as a starting point that can be easily modified.
+
+## Software
+Built with:
+
++ Slim Framework 3
++ Twitter Bootstrap 3
++ JSON
++ Urlify
